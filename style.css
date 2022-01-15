@@ -1,0 +1,161 @@
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(24, 23, 23);
+  background-color: #22202000;
+}  
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #808080d5;
+}
+
+.tab button.active {
+  background-color: #616161d5;
+}
+
+.columnBG {
+  display: inline-block;
+  width: 256px;
+  height: 144px;
+  padding: 10px;
+}
+
+.columnBG img {
+  opacity: 0.8; 
+  cursor: pointer;
+  width:100%;
+  height:100%; 
+}
+
+.columnBG img:hover {
+  opacity: 1;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #546061;
+  border: none;
+  border-radius: 5px;
+}
+
+.msg {
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: #345a35;
+  background: #dff0d8;
+  border: 1px solid #365a36;
+  width: 50%;
+  text-align: center;
+}
+
+.row {
+  overflow: auto;
+  white-space: nowrap;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;  
+}
+
+.row:after {
+  content: "";
+  display: grid;
+  clear: both;
+}
+
+.columnChara {
+  display: inline-block;
+  width: 144px;
+  height: 256px;
+  padding: 5px;
+}
+
+.columnChara img {
+  opacity: 0.8;
+  object-fit: contain; 
+  cursor: pointer;
+  width:100%;
+  height:100%; 
+}
+
+.columnChara img:hover {
+  opacity: 1;
+}
+
+.container {
+  position: absolute;
+  left: 300px;
+  width: 1280px;
+  height: 720px;
+  z-index: 1;
+}
+
+.container img{
+  object-fit: cover;
+  width:1280px; 
+  height: 720px;
+}
+
+.charaimg{
+  position: absolute;
+  left: 450px;
+  bottom: 0px;
+  z-index: 2;
+  height: 640px;
+  width: 360px;
+}
+
+.charaimg img{
+  object-fit: contain;
+  height: 640px;
+  width: 360px;
+}
+
+.dialogue {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -5%);
+  text-align: center;
+  background-color: rgba(104, 80, 80, 0.575);
+  color: white;
+  padding-top: 40px;
+  width: 720px;
+  height: 200px;
+  font-size: 20px;
+  z-index: 3;
+}
+
+.charname {
+  position: absolute;
+  left: 25%;
+  bottom : 272px;
+  text-align: center;
+  background-color: rgba(104, 80, 80, 0.575);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  z-index: 3;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  cursor: pointer;
+}
